@@ -15,7 +15,14 @@ mkdir -p results/trimmed results/qc/fastp
 # DPCh_plate1_B10_S22 DPCh_plate1_B11_S23 DPCh_plate1_B12_S24 DPCh_plate1_C10_S34 ...
 # WITH ALL THE SAMPLE NAME THERE
 
-SAMPLES=..your code goes here..
+#### TOY EXAMPLE
+## path=data/samtools_stats
+## SAMPLES=$(basename -s _stats.tsv.gz -a $path/*)
+## echo $SAMPLES
+
+path=data/fastqs
+SAMPLES=$(basename -s _R1 -a $path/*)
+echo $SAMPLES
 
 
 # NOW, MODIFY THE FOLLOWING, USING VARIABLE SUBSTITUTION SO THAT S IS USED IN PLACE OF THE SAMPLE
