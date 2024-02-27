@@ -1,0 +1,8 @@
+
+genome.fasta.*
+genome.dict
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
